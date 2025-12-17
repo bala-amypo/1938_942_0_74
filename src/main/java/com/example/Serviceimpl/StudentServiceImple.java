@@ -1,5 +1,20 @@
-package com.example.demo.StudentServiceimpl;
+package com.example.demo.Serviceimpl;
+
+
+import org.springframework.stereotype.Service;
+
 
 import com.example.demo.service.StudentService;
 
-public class StudentServiceImple implements S
+
+
+@Service
+public class StudentServiceImple implements StudentService{
+
+}
+
+
+
+
+
+
