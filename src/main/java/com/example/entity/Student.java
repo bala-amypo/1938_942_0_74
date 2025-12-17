@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Student{
-    @id//for primary as unique key to fetch data id will be unique
+    @Id//for primary as unique key to fetch data id will be unique
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String name;
@@ -45,7 +45,7 @@ public class Student{
         this.cgpa=cgpa;
     }
 
-    
+
     public Student(Long id,String name,String email,float cgpa){
         this.id=id;
         this.name=name;
