@@ -1,3 +1,8 @@
 package com.example.demo.service;
 
-public class Student
+import org.springframework.stereotype.Service;
+
+@Service
+public class Student StudentService{
+
+}
