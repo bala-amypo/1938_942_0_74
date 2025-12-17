@@ -10,7 +10,13 @@ import com.example.demo.service.StudentService;
 
 @Service
 public class StudentServiceImple implements StudentService{
+    private final StudentRepository studentRepository;
+    public StudentServiceImple(Student Repository studentRepository){
+        this.studentRepository=studentRepository;
+    }
 
-    public Student save
+    public Student saveStudent(Student student){
+        return
+    }
 
 }
