@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Student{
-    @id
+    @id//for primary as unique key to fetch data id will be unique
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String name;
@@ -20,24 +20,32 @@ public class Student{
     public void setId(Long id){
         this.id=id;
     }
+
+
     public String getName(){
         return name;
     }
     public void setName(String name){
         this.name=name;
     }
+
+
     public String getEmail(){
         return email;
     }
     public void setEmail(String email){
         this.email=email;
     }
+
+
     public float getCgpa(){
         return cgpa;
     }
     public void setCgpa(){
         this.cgpa=cgpa;
     }
+
+    
     public Student(Long id,String name,String email,float cgpa){
         this.id=id;
         this.name=name;
